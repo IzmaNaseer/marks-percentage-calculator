@@ -1,6 +1,8 @@
 # Marks Percentage Calculator
 
 A basic beginner project built using HTML, CSS, and JavaScript.
+Live Demo: View My Calculator
+https://izmanaseer.github.io/marks-percentage-calculator/
 
 ## Features
 - Calculates marks percentage.
