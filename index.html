@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Percentage Calculator</title>
 <style>
+    .calculator {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
     body {
         font-family: Arial, sans-serif;
         margin: 20px;
@@ -21,8 +27,8 @@
     }
     h1 {
         color: #0e0d0d;
-        margin-left: 400px;
-       
+        white-space: nowrap;
+        text-align: center;
     }
 
     label {
@@ -72,6 +78,7 @@
 </style>
 </head>
 <body>
+    <div class="calculator">
     <h1>Marks Percentage Calculator</h1>
     <p>Calculate your marks percentage quickly and easily.</p>
    
@@ -89,6 +96,7 @@
 
  <button id="calculate">Calculate Percentage</button>
  <p id="result"></p>
+ </div>
 </body>
 
 
@@ -105,6 +113,10 @@ button.addEventListener("click", function() {
         alert("Please enter valid marks.");
         return;
     }
+     if (obtainedMarks > totalMarks) {
+    result.textContent = "Invalid marks!";
+    return;
+}
 
     let percentage = (obtainedMarks / totalMarks) * 100;
 
